@@ -1,0 +1,18 @@
+Package: letsberational
+Title: Fast Inverse Lognormal and Normal Volatilities
+Version: 0.0.0.9000
+Authors@R: c(
+    person("Bowen", "Jiang",  email = "jiangbowen@cmu.edu", role = c("aut", "cre")),
+    person("Peter", "Jäckel", role = "aut"))
+Description: This package implements R functions for finding the implied normal 
+    (Bachelier) and lognormal (Black-Scholes) volatilites of an option. They are
+    bindings for Peter Jäckel's papers and reference C++ implementations. These
+    implementations are fast and highly accurate.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
+LinkingTo: 
+    Rcpp,
+Imports: 
+    Rcpp
