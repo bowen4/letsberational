@@ -7,7 +7,7 @@ using namespace Rcpp;
 
 #include <algorithm>
 
-// [[Rcpp::export(.black_price)]]
+// [[Rcpp::export(.black_price, rng = false)]]
 NumericVector black_price(
         NumericVector forward,
         NumericVector strike,
@@ -24,7 +24,7 @@ NumericVector black_price(
     return res;
 }
 
-// [[Rcpp::export(.bachelier_price)]]
+// [[Rcpp::export(.bachelier_price, rng = false)]]
 NumericVector bachelier_price(
         NumericVector forward,
         NumericVector strike,
@@ -40,7 +40,7 @@ NumericVector bachelier_price(
     return res;
 }
 
-// [[Rcpp::export(.black_volatility)]]
+// [[Rcpp::export(.black_volatility, rng = false)]]
 NumericVector black_volatility(
         NumericVector price,
         NumericVector forward,
@@ -57,7 +57,7 @@ NumericVector black_volatility(
     return res;
 }
 
-// [[Rcpp::export(.bachelier_volatility)]]
+// [[Rcpp::export(.bachelier_volatility, rng = false)]]
 NumericVector bachelier_volatility(
         NumericVector price,
         NumericVector forward,

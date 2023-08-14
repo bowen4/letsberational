@@ -15,7 +15,6 @@ NumericVector black_price(NumericVector forward, NumericVector strike, NumericVe
 RcppExport SEXP _letsberational_black_price(SEXP forwardSEXP, SEXP strikeSEXP, SEXP sigmaSEXP, SEXP tenorSEXP, SEXP callputSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
-    Rcpp::RNGScope rcpp_rngScope_gen;
     Rcpp::traits::input_parameter< NumericVector >::type forward(forwardSEXP);
     Rcpp::traits::input_parameter< NumericVector >::type strike(strikeSEXP);
     Rcpp::traits::input_parameter< NumericVector >::type sigma(sigmaSEXP);
@@ -30,7 +29,6 @@ NumericVector bachelier_price(NumericVector forward, NumericVector strike, Numer
 RcppExport SEXP _letsberational_bachelier_price(SEXP forwardSEXP, SEXP strikeSEXP, SEXP sigmaSEXP, SEXP tenorSEXP, SEXP callputSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
-    Rcpp::RNGScope rcpp_rngScope_gen;
     Rcpp::traits::input_parameter< NumericVector >::type forward(forwardSEXP);
     Rcpp::traits::input_parameter< NumericVector >::type strike(strikeSEXP);
     Rcpp::traits::input_parameter< NumericVector >::type sigma(sigmaSEXP);
@@ -45,7 +43,6 @@ NumericVector black_volatility(NumericVector price, NumericVector forward, Numer
 RcppExport SEXP _letsberational_black_volatility(SEXP priceSEXP, SEXP forwardSEXP, SEXP strikeSEXP, SEXP tenorSEXP, SEXP callputSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
-    Rcpp::RNGScope rcpp_rngScope_gen;
     Rcpp::traits::input_parameter< NumericVector >::type price(priceSEXP);
     Rcpp::traits::input_parameter< NumericVector >::type forward(forwardSEXP);
     Rcpp::traits::input_parameter< NumericVector >::type strike(strikeSEXP);
@@ -60,7 +57,6 @@ NumericVector bachelier_volatility(NumericVector price, NumericVector forward, N
 RcppExport SEXP _letsberational_bachelier_volatility(SEXP priceSEXP, SEXP forwardSEXP, SEXP strikeSEXP, SEXP tenorSEXP, SEXP callputSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
-    Rcpp::RNGScope rcpp_rngScope_gen;
     Rcpp::traits::input_parameter< NumericVector >::type price(priceSEXP);
     Rcpp::traits::input_parameter< NumericVector >::type forward(forwardSEXP);
     Rcpp::traits::input_parameter< NumericVector >::type strike(strikeSEXP);

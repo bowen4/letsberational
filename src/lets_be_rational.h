@@ -3,7 +3,7 @@
 //
 // ======================================================================================
 // Copyright © 2013-2014 Peter Jäckel.
-// 
+//
 // Permission to use, copy, modify, and distribute this software is freely granted,
 // provided that this notice is preserved.
 //
@@ -18,8 +18,10 @@
 
 #include "importexport.h"
 
-#define ENABLE_SWITCHING_THE_OUTPUT_TO_ITERATION_COUNT
-#define ENABLE_CHANGING_THE_HOUSEHOLDER_METHOD_ORDER
+// The following switches have been disabled, because they limit compilation to
+// platforms with atomic operations, and are unlikely to be used.
+//#define ENABLE_SWITCHING_THE_OUTPUT_TO_ITERATION_COUNT
+//#define ENABLE_CHANGING_THE_HOUSEHOLDER_METHOD_ORDER
 
 EXPORT_EXTERN_C double set_implied_volatility_maximum_iterations(double n);
 EXPORT_EXTERN_C double set_implied_volatility_output_type(double k);
